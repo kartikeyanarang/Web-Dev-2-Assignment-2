@@ -1,4 +1,4 @@
-const KEY_WEATHER = "a6d33c42c42f7cd7aa93a115a6ac6fe0";
+const KEY_WEATHER = "f3d95f5922d88d6363a5b3fbfc9a9189";
 
 const monitorOutput = document.getElementById("signalConsole");
 const weatherBox = document.getElementById("weatherOutput");
