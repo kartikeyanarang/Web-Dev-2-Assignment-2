@@ -1,0 +1,59 @@
+:root {
+  --sky-blue: #0284c7;
+  --bg-main: #f8fafc;
+  --white: #ffffff;
+  --dark: #0f172a;
+}
+
+body {
+  background-color: var(--bg-main);
+  color: var(--dark);
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0; padding: 20px;
+}
+
+.app-shell { max-width: 900px; margin: 0 auto; }
+header h1 { text-align: center; color: var(--sky-blue); margin-bottom: 25px; }
+.content-wrapper { display: flex; gap: 20px; }
+
+.panel {
+  background: var(--white);
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  margin-bottom: 20px;
+}
+
+.panel label { font-size: 11px; font-weight: bold; color: #64748b; text-transform: uppercase; display: block; margin-bottom: 10px; }
+.sidebar, .main-display { flex: 1; }
+.input-row { display: flex; gap: 8px; }
+
+input { flex: 1; padding: 8px; border: 1px solid #cbd5e1; border-radius: 6px; }
+button { background: var(--sky-blue); color: var(--white); border: none; padding: 8px 15px; border-radius: 6px; cursor: pointer; }
+
+.history-chip {
+  display: inline-block;
+  background: #e0f2fe;
+  color: var(--sky-blue);
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  margin: 4px;
+  cursor: pointer;
+}
+
+.console-panel { background: #1e293b; color: #94a3b8; border-radius: 12px; overflow: hidden; margin-top: 10px; }
+.console-head { background: #0f172a; padding: 10px 15px; display: flex; justify-content: space-between; font-size: 12px; }
+#signalConsole { padding: 15px; font-family: monospace; height: 130px; overflow-y: auto; font-size: 12px; }
+
+.signal-sync { color: #38bdf8; }
+.signal-async { color: #fbbf24; }
+.signal-micro { color: #4ade80; }
+.signal-macro { color: #f472b6; }
+.signal-error { color: #f87171; }
+
+.result-header { font-size: 1.4rem; font-weight: bold; }
+.result-temp { font-size: 3.5rem; color: var(--sky-blue); margin: 5px 0; }
+.result-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; font-size: 14px; border-top: 1px solid #f1f5f9; padding-top: 15px; }
+
+@media (max-width: 600px) { .content-wrapper { flex-direction: column; } }
